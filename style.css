@@ -2,6 +2,7 @@
   additional TODO:
   - use hex colors
   - reconsider units
+  - organize
 */
 
 * {
@@ -12,12 +13,17 @@ body {
   background-image: url("img/bg.png");
   background-attachment: fixed;
   background-size: 100%;
-  margin: 30px;
+  margin: auto;
+  max-width: 70em;
 }
 
 h1, h2, h3, h4 {
   text-align: center;
   font-weight: 1000;
+}
+
+h1, h2:not(#purpose), h3:not(.contact-ctg) {
+  font-size: 3em;
 }
 
 h2:not(#purpose) {
@@ -30,12 +36,17 @@ h3:not(.contact-ctg),
   color: orangered;
 }
 
-p {
+p, .withimg {
   display: flex;
+  text-align: justify;
 }
 
 img {
-  inline-size: 200px;
+  inline-size: 100px;
   object-fit: contain;
   margin-right: 20px;
+}
+
+.largeimg {
+  inline-size: 200px;
 }
