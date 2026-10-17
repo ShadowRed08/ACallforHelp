@@ -52,14 +52,18 @@ img {
   object-fit: contain;
 }
 
+/*
+  TODO: needs better name that signifies sections associated to image containing
+  details that need to be clearly visible
+*/
 .largeimg {
   inline-size: 200px;
 }
 
+/* TODO: seems to add small extra space at left side of element on mobile */
 #broken-system>ul, #contact>ul {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   list-style: none;
   text-align: center;
   justify-content: center;
@@ -83,4 +87,8 @@ img {
       display: none;
     }
   }
+}
+
+#contact>ul {
+  flex-wrap: wrap;
 }
