@@ -68,7 +68,9 @@ img {
   text-align: center;
   justify-content: center;
   gap: 10px;
+  /* TODO: detail text overflow */
   li {
+    flex-shrink: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -77,6 +79,13 @@ img {
     text-align: center;
     align-items: center;
     justify-content: center;
+    /*
+      fixed size is needed due to limitations of current hover detection as well
+    */
+    width: 150px;
+    max-width: 150px;
+    height: 200px;
+    max-height: 200px;
     img {
       inline-size: 50px;
     }
