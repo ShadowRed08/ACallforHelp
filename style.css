@@ -87,7 +87,7 @@ img {
     height: 200px;
     max-height: 200px;
     img {
-      inline-size: 50px;
+      width: 80%
     }
     div {
       color: gray;
