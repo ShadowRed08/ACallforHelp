@@ -68,7 +68,6 @@ img {
   text-align: center;
   justify-content: center;
   gap: 10px;
-  /* TODO: detail text overflow */
   li {
     flex-shrink: 1;
     display: flex;
