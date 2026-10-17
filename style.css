@@ -44,8 +44,15 @@ p, .withimg {
 }
 
 :is(p, div)>img {
+  margin: 20px;
+}
+
+:is(p, div, figure)>img {
   inline-size: 100px;
-  margin-right: 20px;
+}
+
+figure {
+  text-align: center;
 }
 
 img {
@@ -97,6 +104,21 @@ img {
   }
 }
 
+#broken-system>ul>li {
+  border: 5px dashed #3a3a3a;
+}
+
 #contact>ul {
   flex-wrap: wrap;
+}
+
+#contact>h3, #contact>ul>li {
+  background-color: black;
+  border: 5px solid gray;
+  border-bottom: none;
+}
+
+#contact>h3 {
+  font-size: 3em;
+  border-top: none;
 }
